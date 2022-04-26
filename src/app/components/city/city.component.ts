@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { City } from 'src/app/models/city';
 import { CityService } from 'src/app/services/city.service';
 
@@ -6,15 +7,14 @@ import { CityService } from 'src/app/services/city.service';
   selector: 'app-city',
   templateUrl: './city.component.html',
   styleUrls: ['./city.component.css'],
-  providers: [CityService]
 })
 export class CityComponent implements OnInit {
 
-  constructor(private cityService : CityService) { }
-  cities : City[];
+  constructor(private cityService : CityService, private activatedRoute : ActivatedRoute) { }
+  cities : City[] = [];
 
   ngOnInit(): void {
-    this.getCities();
+      this.getCities();
   }
 
   getCities(){
@@ -22,6 +22,4 @@ export class CityComponent implements OnInit {
       this.cities = data
     });
   }
-
-  
 }

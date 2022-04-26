@@ -1,11 +1,12 @@
 <main role="main" class="container">
-<div class="row">
+  <div class="row">
     <div class="col-md-6">
-        <h2 class="mt-5 pt-3">Fotoğraflar</h2>
+      <h2 class="mt-5 pt-3">Fotoğraflar</h2>
+      <ngx-gallery *ngIf="galleryImages" [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
     </div>
-    <div class="col-md-6">
-        <h2 class="mt-5 pt-3">Notlarım</h2>
-        {{ city.description }}
+    <div *ngIf="city" class="col-md-6">
+      <h2 class="mt-5 pt-3">Notlarım</h2>
+      <h6>{{ city.description }}</h6>
     </div>
-</div>
+  </div>
 </main>
