@@ -13,6 +13,7 @@ import { CityComponent } from './components/city/city.component';
 import { CityDetailComponent } from './components/city/city-detail/city-detail.component';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { CityAddComponent } from './components/city/city-add/city-add.component';
+import { NgxEditorModule } from 'ngx-editor';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CityAddComponent } from './components/city/city-add/city-add.component'
     RouterModule.forRoot(appRoutes),
     NgxGalleryModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

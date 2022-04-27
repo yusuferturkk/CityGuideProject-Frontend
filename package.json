@@ -27,6 +27,7 @@
     "font-awesome": "^4.7.0",
     "install": "^0.13.0",
     "ng-alertify": "^1.0.2",
+    "ngx-editor": "^12.2.3",
     "npm": "^8.7.0",
     "rxjs": "~7.5.0",
     "rxjs-compat": "^6.6.7",
