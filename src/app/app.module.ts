@@ -14,6 +14,8 @@ import { CityDetailComponent } from './components/city/city-detail/city-detail.c
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { CityAddComponent } from './components/city/city-add/city-add.component';
 import { NgxEditorModule } from 'ngx-editor';
+import { PhotoComponent } from './components/photo/photo.component';
+import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NgxEditorModule } from 'ngx-editor';
     NavComponent,
     CityComponent,
     CityDetailComponent,
-    CityAddComponent
+    CityAddComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { NgxEditorModule } from 'ngx-editor';
     NgxGalleryModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxEditorModule
+    NgxEditorModule,
+    FileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
